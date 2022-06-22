@@ -25,7 +25,7 @@ public class Persona implements Serializable {
     private String url_image ;
     private String titulo;
     private String Descripcion;
-    private String prueba;
+    
     
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_Ed")
     private List<Educacion> educacionList;
