@@ -16,13 +16,13 @@ import java.io.Serializable;
 @Entity 
 public class Persona implements Serializable {
     
- @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Column(nullable = false, updatable = false)
     private Long id;
     private String nombre;
     private String apellido;
-    private String url_image ;
+    private String url_image;
     private String titulo;
     private String Descripcion;
     
@@ -30,14 +30,14 @@ public class Persona implements Serializable {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_Ed")
     private List<Educacion> educacionList;
     
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idExp")
-    private List<Experiencia> ExperienciaList;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_Exp")
+    private List<Experiencia> experienciaList;
     
-     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idPro")
-    private List<Proyectos> ProyectosList;
+     @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_Pro")
+    private List<Proyectos> proyectosList;
    
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idSkills")
-    private List<Skills> SkillsList;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id_Skills")
+    private List<Skills> skillsList;
    
     
     

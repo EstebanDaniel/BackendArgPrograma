@@ -14,19 +14,30 @@ import lombok.Setter;
 public class Experiencia {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private Long idExp;
-    private String OcupacionExp;
-    private int fechaExp;
-    private String descripExp;
-    private String imgExp;
+    private Long id_Exp;
+    private String titulo_Exp;
+    private String ocupacion_Exp;
+    private int fechain_Exp;
+    private int fechaout_Exp;
+    private String descrip_Exp;
+    private String img_Exp;
+    private String empresa_Exp;
 
-    public Experiencia(Long idExp, String OcupacionExp, int fechaExp, String descripExp, String imgExp) {
-        this.idExp = idExp;
-        this.OcupacionExp = OcupacionExp;
-        this.fechaExp = fechaExp;
-        this.descripExp = descripExp;
-        this.imgExp = imgExp;
+    public Experiencia() {
     }
+
+    public Experiencia(Long id_Exp, String titulo_Exp, String ocupacion_Exp, int fechain_Exp, int fechaout_Exp, String descrip_Exp, String img_Exp, String empresa_Exp) {
+        this.id_Exp = id_Exp;
+        this.titulo_Exp = titulo_Exp;
+        this.ocupacion_Exp = ocupacion_Exp;
+        this.fechain_Exp = fechain_Exp;
+        this.fechaout_Exp = fechaout_Exp;
+        this.descrip_Exp = descrip_Exp;
+        this.img_Exp = img_Exp;
+        this.empresa_Exp = empresa_Exp;
+    }
+
+   
     
-    
+   
 }

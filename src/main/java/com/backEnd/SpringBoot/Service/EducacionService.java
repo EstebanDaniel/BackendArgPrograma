@@ -16,9 +16,6 @@ public class EducacionService {
     
     private final EducacionRepository educacionRepo;
 
-    
-    
-    
     @Autowired
     public EducacionService(EducacionRepository educacionRepo) {
         this.educacionRepo = educacionRepo;

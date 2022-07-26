@@ -10,24 +10,30 @@ import lombok.Getter;
 import lombok.Setter;
 
 
-@Getter @Setter
+
+@Getter
+@Setter
 @Entity
 public class Skills {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     
-    private Long idSkills;
-    private String nombreSkills;
-    private String imgSkills;
-    private int porcentajeSkills;
+    private Long id_Skills;
+    private String titulo_Skills;
+    private String nombre_Skills;
+    private String img_Skills;
+    private int porcentaje_Skills;
 
-    public Skills(Long idSkills, String nombreSkills, String imgSkills, int porcentajeSkills) {
-        this.idSkills = idSkills;
-        this.nombreSkills = nombreSkills;
-        this.imgSkills = imgSkills;
-        this.porcentajeSkills = porcentajeSkills;
+    public Skills() {
+    }
+
+    public Skills(Long id_Skills, String titulo_Skills, String nombre_Skills, String img_Skills, int porcentaje_Skills) {
+        this.id_Skills = id_Skills;
+        this.titulo_Skills = titulo_Skills;
+        this.nombre_Skills = nombre_Skills;
+        this.img_Skills = img_Skills;
+        this.porcentaje_Skills = porcentaje_Skills;
     }
     
-    
-    
+  
 }

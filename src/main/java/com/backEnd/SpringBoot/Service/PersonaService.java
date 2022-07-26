@@ -2,6 +2,7 @@
 package com.backEnd.SpringBoot.Service;
 
 
+import com.backEnd.SpringBoot.Exception.UserNotFoundException;
 import com.backEnd.SpringBoot.Model.Persona;
 import com.backEnd.SpringBoot.Repository.PersonaRepository;
 import java.util.List;
@@ -39,7 +40,7 @@ public class PersonaService {
     }
     
     public Persona buscarPersonaPorId (Long id) {
-    return personaRepo.findById(id).orElse(null);
+    return personaRepo.findById(id).orElseThrow(() ->new UserNotFoundException("Usuario no encontrado"));
         
     }
 }

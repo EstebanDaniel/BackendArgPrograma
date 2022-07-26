@@ -17,28 +17,24 @@ public class Educacion {
    
     private Long id_Ed;
     private String titulo_Ed;
-    private int fecha_Ed;
+    private int fechain_Ed;
+    private int fechaout_Ed;
     private String descripcion_Ed;
     private String img_Ed;
 
     public Educacion() {
     }
 
-    public Educacion(Long id_Ed, String titulo_Ed, int fecha_Ed, String descripcion_Ed, String img_Ed) {
+    public Educacion(Long id_Ed, String titulo_Ed, int fechain_Ed, int fechaout_Ed, String descripcion_Ed, String img_Ed) {
         this.id_Ed = id_Ed;
         this.titulo_Ed = titulo_Ed;
-        this.fecha_Ed = fecha_Ed;
+        this.fechain_Ed = fechain_Ed;
+        this.fechaout_Ed = fechaout_Ed;
         this.descripcion_Ed = descripcion_Ed;
         this.img_Ed = img_Ed;
     }
 
-    
-   
   
-    
-    
-   
-    
 }
 
     
