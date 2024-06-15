@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.backEnd.SpringBoot.UserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec <<< FAILURE! - in com.backEnd.SpringBoot.UserRepositoryTest
+com.backEnd.SpringBoot.UserRepositoryTest.testCreateUser()  Time elapsed: 0.608 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.backEnd.SpringBoot.UserRepositoryTest.testCreateUser(UserRepositoryTest.java:31)
+
